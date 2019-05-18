@@ -1,1 +1,15 @@
 // Mixins Here
+.flex(@justify, @align) {
+  display: flex;
+  flex-direction: column;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.button(@padding) {
+  padding: @padding;
+  background-color: @btn-bg-color;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
