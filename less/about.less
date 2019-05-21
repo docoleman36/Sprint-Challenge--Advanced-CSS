@@ -1,0 +1,64 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+
+  @media @phone {
+    width: 100%;
+  }
+}
+
+header {
+  nav {
+    .flex(center, center);
+    background-color: @wild-sand;
+    padding: 25px 0;
+    margin-top: 20px;
+    border: 1px solid @sea-shell;
+
+    h1 {
+      font-size: 40px;
+      padding-bottom: 20px;
+    }
+
+    a {
+      color: @river-bend;
+      text-decoration: none;
+      font-size: 18px;
+      padding-right: 20px;
+
+      &:active {
+        background-color: @nav-font;
+        color: @nav-bg;
+      }
+    }
+  }
+
+  @media @phone {
+    width: 100%;
+  }
+}
+
+.top-content {
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .text {
+    display: flex;
+  }
+
+  .top-text {
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  @media @phone {
+    .text {
+      flex-direction: column;
+    }
+    .top-text {
+      width: 100%;
+    }
+  }
+}
